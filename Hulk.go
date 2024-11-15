@@ -57,7 +57,16 @@ var (
 		"Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SV1; .NET CLR 2.0.50727; InfoPath.2)",
 		"Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)",
 		"Mozilla/4.0 (compatible; MSIE 6.1; Windows XP)",
-		"Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51",
+		"Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51"
+		"Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)",
+                "Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; el-GR)",
+                "Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 5.2)",
+                "Mozilla/5.0 (MSIE 7.0; Macintosh; U; SunOS; X11; gu; SV1; InfoPath.2; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648)",
+                "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.0; WOW64; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; c .NET CLR 3.0.04506; .NET CLR 3.5.30707; InfoPath.1; el-GR)",
+                "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; c .NET CLR 3.0.04506; .NET CLR 3.5.30707; InfoPath.1; el-GR)",
+                "W3C_Validator/1.432.2.10",
+                "W3C_Validator/1.305.2.12 libwww-perl/5.64",
+                "Mozilla/5.0 (Windows; U; Windows NT 6.1; tr-TR) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27.
 	}
 	cur int32
 )
