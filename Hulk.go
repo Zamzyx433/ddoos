@@ -56,8 +56,7 @@ var (
 		"Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Win64; x64; Trident/4.0)",
 		"Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SV1; .NET CLR 2.0.50727; InfoPath.2)",
 		"Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)",
-		"Mozilla/4.0 (compatible; MSIE 6.1; Windows XP)",
-		"Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51"
+		"Mozilla/4.0 (compatible; MSIE 6.1; Windows XP)"
 	}
 	cur int32
 )
@@ -93,7 +92,7 @@ func main() {
 	t := os.Getenv("HULKMAXPROCS")
 	maxproc, err := strconv.Atoi(t)
 	if err != nil {
-		maxproc = 15000
+		maxproc = 18000
 	}
 
 	u, err := url.Parse(site)
